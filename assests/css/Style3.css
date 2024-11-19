@@ -1,0 +1,74 @@
+General Styles */
+body {
+    margin: 0;
+    padding:0;
+    background-color: burlywood;
+    line-height: normal;
+    font-family: 'proxime nova',Arial, Helvetica, sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Song List */
+.song-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.song {
+    background: black;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;  /* Set a fixed width for the song cards */
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Make the images the same shape */
+.song img {
+    width: 150px;  /* Set a fixed width for the images */
+    height: 150px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensures images cover the space without distorting */
+    border-radius: 50%;  /* Make images circular */
+    margin-bottom: 10px;  /* Space between the image and text */
+}
+
+.song h2 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    color: white
+}
+
+.song p {
+    font-size: 1rem;
+    color: wheat
+}
+
+audio {
+    margin-top: 10px;
+    width: 100%;
+}

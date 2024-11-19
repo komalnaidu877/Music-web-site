@@ -1,0 +1,328 @@
+html, body{
+    margin: 0;
+    padding:0;
+    background-color: #1b1b1b;
+    line-height: normal;
+    font-family: 'proxime nova',Arial, Helvetica, sans-serif;
+    
+}
+.container{
+
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.hidden{
+    display: none;
+}
+/**
+*header css start
+*/
+header{
+    background-color: #222428;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+.header-cont{
+    display:flex;
+    color: white;
+    flex-direction: row;
+    padding:10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    display: inline-block;
+}
+.hamburger-menu,.logo,.search-input{
+    margin-right: 27px;
+}
+.logo svg{
+    width: 100px;
+    height: 26px;
+}
+.hamburger-menu .svg_color{
+    fill:hsla(0,0%,100%,.8);
+}
+.search-input{
+    display: inline-flex;
+    flex-direction:row;
+    align-items: center;
+    max-width: 500px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 0 10px;
+    flex: 1;
+    box-sizing: border-box;
+    color:#8e8e93;
+    font-size: 12px;
+    background-color: #1b1b1b;
+    border: 1px solid hsla(0,0%,100%,.1);
+}
+.header-btn{
+    background-color: white;
+    color:black;
+    font: size 12px;
+    border: 1px solid white;
+    line-height: 10px;
+    padding: 9px 20px 7px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.search-input svg{
+    margin: 0 4px;
+}
+.search-input .svg_color{
+    fill:hsla(0,0%,100%,.8);
+}
+.search-input input{
+    background-color: transparent;
+    border: 38px;
+    outline: none;
+    color: white;
+}
+.login-cta{
+    font-size:12px;
+    color: hsla(0,0%,100%,.75);
+}
+/**
+*header css end
+*/
+
+/**
+*navigation header css start
+*/
+.navigation-menu{
+    position: sticky;
+    top: 60px;
+    min-height: 60px;
+    z-index: 200;
+    background-color: #1B1B1B;
+}
+.nav-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0px;
+
+}
+.nav-link{
+    color: hsla(0,0%,100%,.9);
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 30px;
+    text-decoration: none;
+    letter-spacing: -.09px;
+    text-transform: capitalize;
+
+}
+
+/**
+*navigation header css end
+*/
+
+/**
+*2 columns layout css start
+*/
+.two-col-layout{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+}
+.music-libs{
+    flex:7;
+    max-width: calc(100%-90px);
+    padding: 0 45px;
+    margin: 0 auto 100px;
+    max-width: 70%;
+   
+}
+.ad-cont{
+    flex:2;
+    max-width: 30%;
+    background-color: #1E1E1E;
+}
+
+/**
+*2 columns layout css ends
+*/
+
+
+/**
+*slider css start
+*/
+
+/**
+*slider css end
+*/
+
+
+
+/**
+*song section css start
+*/
+.songs-sections{
+    margin:50px 0;
+
+}
+
+.section-heading{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: hsla(0,0%,100%,.9);
+    text-transform: capitalize;
+}
+
+.songs-cont{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+.song-card{
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+
+}
+.song-card:hover .overlay{
+    visibility: visible;
+}
+.song-card:hover .img-cont{
+    filter: brightness(.75);
+}
+.img-cont{
+    width: 160px;
+    height: 160px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+   
+}
+.song-name{
+    color: hsla(0,0%,100%,.9);
+    margin-top: 6px;
+    font-size: 16px;
+}
+.overlay{
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .3);
+    cursor: pointer;
+    background-image: url(https://a10.gaanacdn.com/gn_img/images/play_1621599900.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: calc(50% + 1px) 50%;
+}
+
+/**
+*song section css end
+*/
+
+
+
+/*
+*Music player css start
+*/
+.music-player{
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #222428;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 50%);
+    padding: 15px 25px;
+    border-radius: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.current-music-playing{
+    align-items: center;
+    flex: 2;
+}
+.song-cover{
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 10px;
+
+}
+.t_over{
+    font-size: 16;
+    color:white;
+
+}
+.t_over2{
+    font-size: 10px;
+    margin-top: 4px;
+    color:whitesmoke
+}
+.song-info{
+    flex-direction: column;
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.music-controls{
+    align-items: center;
+    flex: 3;
+    padding-left: 90px;
+
+}
+.time{
+    border-radius: 20px;
+    border:1px solid white;
+    color:white;
+    font-size: 12px;
+    padding: 8px 10px;
+
+}
+.music-controls button, .music-quality button{
+    margin: 0 12px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+}
+.music-controls .svg_color, .music-quality .svg_color{
+    fill:white;
+
+}
+.play{
+    background-color: red !important;
+    border-radius: 20px;
+    height: 32px;
+    width: 32px;
+}
+
+.next svg{
+     transform: rotateY(180deg);
+}
+.music-quality{
+    flex:1;
+    justify-content: flex-end;
+
+}
+
+/*
+*Music player css end
+*/
+.add{
+    color: beige;
+}

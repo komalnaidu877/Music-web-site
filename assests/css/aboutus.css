@@ -1,0 +1,97 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222; /* Dark background color */
+    margin: 0;
+    padding: 0;
+    color: #fff; /* White text color */
+}
+
+/* About Us Container */
+.about-us-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Dark blue gradient */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect for Container */
+.about-us-container:hover {
+    transform: scale(1.05);
+}
+
+/* Header Section */
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #e74c3c; /* Red color for title */
+    font-weight: bold;
+}
+
+header p {
+    font-size: 18px;
+    color: #ecf0f1; /* Light gray for subtitle */
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #e74c3c; /* Red color for section titles */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ecf0f1; /* Light gray text for body */
+}
+
+/* Link Styling */
+a {
+    color: #3498db; /* Bright blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e74c3c; /* Red color for hover */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us-container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+}

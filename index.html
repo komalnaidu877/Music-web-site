@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assests/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-cont container">
+        <span class="hamburger-menu">
+            <svg width="24" height="24" viewBox="0 0 24 24"><path class="svg_color" fill="#000" fill-rule="nonzero" d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z"></path></svg>
+        </span>
+        <a href="" class="logo">
+            <img src="/assests/Rythem2.jpg" alt="rythm logo" class="rythmLogoImg" width="50" height="50" viewBox="0 0 87 22">
+        </a>
+        <!--Dive for search ij nput-->
+        <div class="search-input">
+          <svg width="18" height="18" viewBox="0 0 25 25"><path class="svg_color" fill="#000" fill-rule="evenodd" d="M10.5 2A6.5 6.5 0 0 1 17 8.5c0 1.6-.6 3.1-1.56 4.23l.27.27h.8l5 5-1.5 1.5-5-5v-.8l-.27-.27C13.55 14.447 12.05 15 10.5 15a6.5 6.5 0 1 1 0-13zm0 2A4.48 4.48 0 0 0 6 8.5a4.48 4.48 0 0 0 4.5 4.5A4.48 4.48 0 0 0 15 8.5 4.48 4.48 0 0 0 10.5 4z"></path></svg>
+        <input type="text" placeholder="search,Artist,Songs,Albume">
+        </div>
+        <button class="header-btn">GO add free<span class="floating-badge">New</span></button>
+        <button class="header-btn">Get Rythm pluse</button>
+        <a class="icon-cont"><svg width="32" height="24" viewBox="0 0 20 16"><g fill="none" fill-rule="evenodd"><g transform="translate(-1108 -117) translate(1089 58) translate(19 15) translate(0 43) translate(.5 1.5)"><rect class="svg_box" width="11" height="11" x="7.591" y="3.5" fill="#FFF" stroke="#8E8E93" rx="5.5"></rect><rect class="svg_box" width="11" height="11" x=".5" y=".5" fill="#FFF" stroke="#8E8E93" rx="5.5"></rect><text fill="#8E8E93" font-size="7" font-weight="500"><tspan x="3.5" y="9">A</tspan></text><text fill="#8E8E93" font-size="5" font-weight="500"><tspan x="12" y="11.5">अ</tspan></text></g></g></svg></a>
+        <a class="icon-cont"><svg width="28" height="28" viewBox="0 0 30 30"><g fill="none" fill-rule="evenodd"><g class="svg_stroke" fill-rule="nonzero" stroke="#000" stroke-width=".5"><path d="M18.062 15.441c-2.222 1.13-4.847 1.148-7.084.047-2.237-1.1-3.825-3.19-4.287-5.64-.526-2.94.62-5.93 2.975-7.768.241-.185.321-.512.193-.787-.119-.279-.415-.438-.714-.384h-.002c-2.678.463-5.047 2.012-6.545 4.28-1.497 2.269-1.99 5.055-1.364 7.7.568 2.587 2.164 4.833 4.42 6.22 2.087 1.27 4.565 1.739 6.972 1.319.193-.034.386-.074.577-.12 1.393-.337 2.697-.971 3.822-1.859.72-.584 1.35-1.27 1.872-2.036.174-.247.158-.58-.04-.81-.196-.23-.524-.296-.795-.162zm-1.447 2.489c-1.05.828-2.266 1.42-3.566 1.735-2.406.567-4.938.165-7.05-1.12-2.104-1.295-3.591-3.39-4.12-5.803-.587-2.469-.127-5.07 1.271-7.189C4.548 3.436 6.76 1.99 9.26 1.56 6.71 3.55 5.47 6.788 6.042 9.972c.5 2.653 2.219 4.916 4.641 6.109 2.422 1.193 5.264 1.176 7.672-.046-.485.713-1.07 1.352-1.74 1.896h0v-.001z" transform="translate(5 5)"></path></g></g></svg></a>
+        <a class="login-cta">Log In/Sign up</a>
+      
+    </div>
+    </header>
+    
+    <!--creating nav //creating anker tages-->
+    <nav class="navigation-menu">
+        <div class="nav-cont container">
+                <a href="" class="nav-link">All</a>
+                <a href="English.html" class="nav-link">English song</a>
+                <a href="Aboutus.html" class="nav-link">About us</a>
+               
+        </div>
+    </nav>
+    
+
+    <div class="two-col-layout">
+      <section class="music-libs" id="music-libs">
+
+  
+        <div class="songs-sections">
+          <div class="songs-cont">      
+          </div>
+        </div>
+
+      </section>
+
+      <section class="ad-cont">
+        <h3 class="add">section is for adds</h3> 
+      </section>
+    </div>
+
+    <div class="music-player hidden" id="music-player">
+      <audio id="audio_player" style ="display:none;"controls="controls" loop="loop" preload="auto"></audio>
+      <div class="flex-row current-music-playing">
+        <div class="song-cover">
+          <img height="40" id="song-img" width="40"  src="https://a10.gaanacdn.com/gn_img/albums/lJvKa16KDV/JvKaEg2KDV/size_m.webp" alt="Bolo Ta Ra Ra" title="Bolo Ta Ra Ra">
+        </div>
+        <div class="flex-row song-info">
+           <strong class="t_over"id="song-name">
+                 Bolo Ta Ra Ra
+           </strong>
+          <small class="t_over2">
+             Demo text
+          </small>
+          </div>
+        <div class="song-actions">
+        <svg class="fav " width="18" height="18" viewBox="0 0 19 19"><g fill="none" fill-rule="evenodd"><path class="svg_color" fill-rule="nonzero" d="M9 17.792l-1.208-1.1C3.5 12.8.667 10.225.667 7.083.667 4.508 2.683 2.5 5.25 2.5c1.45 0 2.842.675 3.75 1.733A5.011 5.011 0 0 1 12.75 2.5c2.567 0 4.583 2.008 4.583 4.583 0 3.142-2.833 5.717-7.125 9.609L9 17.792z"></path></g></svg>
+        <svg class="threedot_svg" width="20" height="20" viewBox="0 0 24 24"><g class="svg_color" fill="#000" transform="translate(10 5)"><circle cx="1.5" cy="1.5" r="1.5"></circle><circle cx="1.5" cy="7.5" r="1.5"></circle><circle cx="1.5" cy="13.5" r="1.5"></circle></g></svg>
+      </div>
+      </div>
+
+      <div class="flex-row music-controls">
+        <div class="time">
+          <span class="_a" id="songTimeStart">00:00</span>
+          <span class="sepr">/</span>
+          <span class="_b" id="songTotalTime">00:00</span>
+        </div>
+         <button class="shuffle">
+             <svg width="24" height="24" viewBox="0 0 24 24"><path class="svg_color" fill="#000" fill-rule="evenodd" d="M18.5 13.024V18H8.302v2L5 17.532l3.302-2.46V17H17.5v-3.976h1zM16.698 4L20 6.468l-3.302 2.46V7H7.5v3.976h-1V6h10.198V4z"></path></svg>
+         </button>
+         <button title="Previous Song" class="prev sm-hide ">
+          <svg width="24" height="24" viewBox="0 0 24 24"><g class="svg_color" fill="#000" transform="translate(-655 -2658) translate(87 2624)"><g transform="translate(520 29) rotate(-180 32.714 12.5)"><path d="M5.187 2.955L12.588 12.834 -2.215 12.834z" transform="rotate(90 5.187 7.895)"></path><rect width="1.482" height="14.803" x="9.632" y=".74" rx=".741"></rect></g></g> </svg>
+        </button>
+
+        <button title="Play" class="play false" id="play" onclick="togglePlayer()">
+             <span id="paused"><svg width="13" height="14" viewBox="0 0 16 24"><path class="svg_color" fill-rule="evenodd" d="M0 0v24l20-12z"></path></svg></span>
+             <span id="playing"><svg width="22" height="22" viewBox="0 0 24 24"><path class="svg_color" d="M14 19h4V5h-4v14zm-8 0h4V5H6v14z"></path></svg></span>
+        </button>
+
+        <button title="Next Song" class="next sm-hide "><svg width="24" height="24" viewBox="0 0 24 24"><g class="svg_color" fill="#000" transform="translate(-655 -2658) translate(87 2624)"><g transform="translate(520 29) rotate(-180 32.714 12.5)"><path d="M5.187 2.955L12.588 12.834 -2.215 12.834z" transform="rotate(90 5.187 7.895)"></path><rect width="1.482" height="14.803" x="9.632" y=".74" rx=".741"></rect></g></g></svg></button>
+        <button title="Shuffle" class="shuffle sm-hide s_off "><svg width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path class="svg_color" fill="#000" d="M19 5.163l-.645 4.36-1.552-1.552L5.626 19.15l-.62-.62L16.186 7.352l-1.55-1.55L19 5.163zm-4.602 8.386l2.443 2.443 1.514-1.514.64 4.365-4.36-.644 1.588-1.588-2.445-2.443.62-.62zM5.628 4.85l5.064 5.065-.62.62L5.008 5.47l.62-.62z"></path></g></svg></button>
+      </div>
+
+      <div class="music-quality">
+        <button title="Volume" class="Button false ToggleButton Volume__toggle "><svg width="24" height="24" viewBox="0 0 24 24"><g class="svg_color" fill="#000" fill-rule="evenodd"><path d="M9.148.045c-.163-.074-.358-.054-.499.051L4.066 3.43H.47C.21 3.43 0 3.622 0 3.86v4.284c0 .237.21.429.47.429h3.596l4.583 3.334c.084.06.186.093.292.094.072-.002.142-.017.207-.043.162-.072.264-.222.264-.386V.431c0-.164-.102-.314-.264-.386zM8.471 10.68L4.527 7.81c-.083-.06-.186-.094-.292-.095H.941V4.287h3.294c.106-.001.209-.034.292-.094l3.944-2.871v9.358zM12.01.062c-.145-.08-.325-.083-.474-.009-.148.075-.24.215-.244.369-.004.154.083.298.228.377 2.419 1.32 3.539 2.974 3.539 5.202 0 2.228-1.12 3.882-3.539 5.202-.22.125-.291.387-.16.591.088.126.24.203.405.206.086.002.17-.02.244-.06C14.692 10.475 16 8.572 16 6.001c0-2.57-1.308-4.473-3.99-5.939z" transform="translate(4 6)"></path><path d="M11.595 8.572h.17c.134 0 .261-.052.348-.146.692-.649 1.074-1.52 1.063-2.425.011-.904-.37-1.776-1.063-2.425-.122-.143-.329-.202-.518-.146-.19.07-.311.242-.3.429v4.284c-.011.187.11.36.3.429z" transform="translate(4 6)"></path></g></svg></button>
+        <button title="Queue" class="_d"><svg width="24" height="22" viewBox="0 0 24 24"><path class="svg_color" fill="#000" fill-rule="evenodd" d="M1.414 0L0 1.414l7 7-7 7 1.414 1.414 8.414-8.414z"></path></svg></button>
+      </div>
+    </div>
+
+
+    <script src="/assests/js/main.js"></script>
+
+</body>
+
+</html>
